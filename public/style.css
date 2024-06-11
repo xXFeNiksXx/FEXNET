@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+.popap1 {
+    width: 70%;
+    min-height: 70vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background: rgb(97,67,133);
+    background: linear-gradient(90deg, rgba(97,67,133,1) 0%, rgba(81,99,149,1) 100%);
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    z-index: 3;
+}
+.popap2 {
+   width: 70%;
+   min-height: 70vh;
+   display: none;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 50px;
+   background: rgb(97,67,133);
+   background: linear-gradient(90deg, rgba(97,67,133,1) 0%, rgba(81,99,149,1) 100%);
+   color: #fff;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   border-radius: 10px;
+   z-index: 3;
+}
+.page {
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 50px;
+   background-color: #333;
+   color: #fff;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    min-height: 50vh;
+    /* background-color: cadetblue; */
+    align-items: center;
+    padding: 0 100px;
+    text-align: center;
+
+}
+
+#uploadForm,
+#downloadForm {
+    background-color: #000;
+    padding: 40px 50px;
+    position: relative;
+    left: 30%;
+    border-radius: 20px;
+    width: 40%;
+    box-shadow: 0 5px 5px #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#uploadForm input,
+#downloadForm input {
+    width: 80%;
+    height: 50px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#uploadForm input {
+    opacity: 0;
+    background-color: red;
+}
+
+.uploadContainer {
+    width: 100%;
+    height: 60px;
+    background-color: cadetblue;
+    margin-bottom: 10px;
+}
+
+#downloadForm button,
+#uploadForm button {
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(58, 170, 208);
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 3px 5px #333;
+}
+.redBlock{
+   width: 250px;
+   height: 250px;
+   margin: 10%;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: rgb(212,20,90);
+   background: linear-gradient(90deg, rgba(212,20,90,1) 0%, rgba(251,176,59,1) 100%);
+   border-radius: 10px;
+}
+.blueBlock{
+   width: 250px;
+   height: 250px;
+   background: rgb(46,49,146);
+   background: linear-gradient(90deg, rgba(46,49,146,1) 0%, rgba(27,255,255,1) 100%);
+   margin: 10%;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 10px;
+}
+
+.messageText {
+   margin-top: 20px;
+   color: red;
+   text-align: center;
+}
+.count{
+   display: flex;
+   background-color: #686363;
+   border-radius: 10px;
+   padding: 10px;
+   margin: 5px;
+   z-index: 1;
+}
+.sizeMB{
+   display: flex;
+   background-color: #686363;
+   border-radius: 10px;
+   padding: 10px;
+   margin: 5px;
+   z-index: 1;
+}
+.statistik{
+   display: flex;
+   position: absolute;
+   top: 15vh;
+   left: 40%;
+   z-index: 1;
+}

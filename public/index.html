@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Sharing App</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css' integrity='sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA==' crossorigin='anonymous'/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js' integrity='sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==' crossorigin='anonymous'></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.js' integrity='sha512-vHNHepeQWwAggJlhEk932jRS5sNdn/Nn4F+w4TpXW5dA+04qnd3e7YpfXo6auWhFG6z3FVhmScG4ovtF+qYeZw==' crossorigin='anonymous'></script>
+</head>
+<body>
+    <div class="popap1" id="popap1">
+        <i class="fa-regular fa-circle-xmark" id="xmark" style="color: #ff0000; font-size: 30px; position: relative;
+        left: 50%;"></i>
+          <h1>Share your files</h1>
+        <div class="container">
+        <form id="uploadForm">
+          <div class="uploadContainer">  <input type="file" id="fileInput" required></div>
+            <button type="submit">Upload File</button>
+            <p id="message"></p>
+        </form>
+    </div>
+    </div>
+    <div class="popap2" id="popap2">
+        <i class="fa-regular fa-circle-xmark" id="xmark1" style="color: #ff0000; font-size: 30px; position: relative;
+        left: 50%;"></i>
+          <h1>File Sharing App</h1>
+        <div class="container">
+            <form id="downloadForm">
+                <input type="text" id="codeInput" placeholder="Enter file code" required>
+                <button type="submit">Download File</button>
+                <p class="messageText" id="message"></p>
+            </form>
+    </div>
+    </div>
+    <div class="page">
+      <div class="statistik">
+        <div class="count"></div>
+        <div class="sizeMB"></div>
+        </div>
+        <div class="redBlock">Download files</div>
+        <div class="blueBlock">Upload files</div>
+    </div>
+    
+<script src="./main.js"></script>
+</body>
+</html>
